@@ -11,22 +11,8 @@ Built as a demonstration of a full STT → LLM agent (with tool calling) → TTS
 3. **Text-to-Speech**: The reply is converted back into spoken audio using `edge-tts`, with language-appropriate voices (e.g. Hindi, Telugu, Indian-accented English).
 
 ## Project structure
-<<<<<<< HEAD
-=======
-voice-agent/
-├── main.py
-├── stt.py
-├── tts.py
-├── agent.py
-├── tools.py
-├── data/
-│   ├── input_audio/
-│   └── output_audio/
-└── tests/
-    └── test_pipeline.py
->>>>>>> 0ab34dcd18a33173be509f2a9fc1d719ab3548d8
 
-\`\`\`
+```
 voice-agent/
 main.py
 stt.py
@@ -38,7 +24,7 @@ input_audio/
 output_audio/
 tests/
 test_pipeline.py
-\`\`\`
+```
 
 ## Setup
 
@@ -47,9 +33,9 @@ pip install -r requirements.txt
 ```
 
 Create a `.env` file with your Groq API key:
-
+```
 GROQ_API_KEY=your_key_here
-
+```
 
 ## Running
 
@@ -70,4 +56,4 @@ Sample input audio is drawn from [Mozilla Common Voice](https://commonvoice.mozi
 ## Notes
 
 - Tool calling only triggers when the spoken input actually maps to a known tool (e.g. an order status or weather question). Ambiguous or unrelated input is handled by asking for clarification rather than hallucinating an answer.
-- The architecture is language-agnostic — adding a new language mainly requires mapping it to an appropriate `edge-tts` voice in `tts.py`.  
+- The architecture is language-agnostic — adding a new language mainly requires mapping it to an appropriate `edge-tts` voice in `tts.py`.
