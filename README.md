@@ -11,6 +11,20 @@ Built as a demonstration of a full STT → LLM agent (with tool calling) → TTS
 3. **Text-to-Speech**: The reply is converted back into spoken audio using `edge-tts`, with language-appropriate voices (e.g. Hindi, Telugu, Indian-accented English).
 
 ## Project structure
+<<<<<<< HEAD
+=======
+voice-agent/
+├── main.py
+├── stt.py
+├── tts.py
+├── agent.py
+├── tools.py
+├── data/
+│   ├── input_audio/
+│   └── output_audio/
+└── tests/
+    └── test_pipeline.py
+>>>>>>> 0ab34dcd18a33173be509f2a9fc1d719ab3548d8
 
 \`\`\`
 voice-agent/
