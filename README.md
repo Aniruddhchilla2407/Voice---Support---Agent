@@ -12,16 +12,16 @@ Built as a demonstration of a full STT → LLM agent (with tool calling) → TTS
 
 ## Project structure
 voice-agent/
-├── main.py # orchestrates the full pipeline
-├── stt.py # speech-to-text (Groq Whisper)
-├── tts.py # text-to-speech (edge-tts)
-├── agent.py # LLM + tool-calling loop
-├── tools.py # mock backend tools the agent can call
+├── main.py              # orchestrates the full pipeline
+├── stt.py                # speech-to-text (Groq Whisper)
+├── tts.py                 # text-to-speech (edge-tts)
+├── agent.py               # LLM + tool-calling loop
+├── tools.py                # mock backend tools the agent can call
 ├── data/
-│ ├── input_audio/ # sample voice clips (Common Voice dataset)
-│ └── output_audio/ # generated spoken replies
+│   ├── input_audio/        # sample voice clips (Common Voice dataset)
+│   └── output_audio/       # generated spoken replies
 └── tests/
-└── test_pipeline.py # sanity tests for each component + full pipeline
+    └── test_pipeline.py    # sanity tests for each component + full pipeline
 
 
 ## Setup
