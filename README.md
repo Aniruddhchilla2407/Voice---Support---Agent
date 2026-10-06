@@ -11,16 +11,16 @@ Built as a demonstration of a full STT → LLM agent (with tool calling) → TTS
 3. **Text-to-Speech**: The reply is converted back into spoken audio using `edge-tts`, with language-appropriate voices (e.g. Hindi, Telugu, Indian-accented English).
 
 ## Project structure
-├── main.py              # orchestrates the full pipeline
-├── stt.py                # speech-to-text (Groq Whisper)
-├── tts.py                 # text-to-speech (edge-tts)
-├── agent.py               # LLM + tool-calling loop
-├── tools.py                # mock backend tools the agent can call
+├── main.py
+├── stt.py
+├── tts.py
+├── agent.py
+├── tools.py
 ├── data/
-│   ├── input_audio/        # sample voice clips (Common Voice dataset)
-│   └── output_audio/       # generated spoken replies
+│   ├── input_audio/
+│   └── output_audio/
 └── tests/
-    └── test_pipeline.py    # sanity tests for each component + full pipeline
+    └── test_pipeline.py
 
 
 ## Setup
